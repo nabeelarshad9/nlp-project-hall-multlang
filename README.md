@@ -16,8 +16,8 @@ Using the official Mu-SHROOM participant kit scorer:
 - `CS4650_Project.ipynb` - Main Colab notebook for setup, training, prediction, and scoring
 - `scores_random.txt` - Random baseline score output
 - `scores_xlmr.txt` - XLM-R baseline score output
-- `predictions_random.jsonl` - Random baseline predictions (if included)
-- `predictions_xlmr.jsonl` - XLM-R baseline predictions (if included)
+- `predictions_random.jsonl` - Random baseline predictions
+- `predictions_xlmr.jsonl` - XLM-R baseline predictions
 ## Baseline Results (Current)
 | Model | IoU | Correlation |
 |---|---:|---:|
