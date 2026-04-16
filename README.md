@@ -11,7 +11,7 @@ This project asks whether **hallucination detectors** behave the same way: if we
 
 ## Research questions
 
-- Does an **English-only** hallucination detector **transfer** to other languages, or does performance **drop**-and by how much **per language**?
+- Does an **English-only** hallucination detector **transfer** to other languages, or does performance **drop**, and by how much **per language**?
 - When it drops, is the gap related to **script**, **tokenization**, or **distance from English** more generally?
 - How does that English-only detector compare to the **same architecture fine-tuned on the target language** on identical test conditions?
 - **Which languages** are hardest for English-only transfer relative to a **language-specific** model?
@@ -45,12 +45,6 @@ We adopt a **cross-lingual transfer** setup on **Mu-SHROOM**:
 
 We report metrics **per language** so we can see which languages **benefit most or least** from English-only transfer versus **target-language** fine-tuning. The **final report** ties numbers to **discussion**: failure modes, languages with large script/tokenization differences from English, and how results relate to **prior work** on multilingual hallucination and cross-lingual NLP (see the project proposal and report for citations).
 
-**Optional tooling** (exploration, not the core benchmark): smaller open models or APIs (e.g. **LLaMA**, **Mistral** via Hugging Face Inference, **Colab** GPU) may support side experiments; **primary** results are anchored on Mu-SHROOM + the official pipeline.
 
-## Contribution (vs prior work)
 
-We do not aim to “win” every leaderboard metric in one semester; we aim for a **clear empirical story**: under **fixed data and metrics**, how far does **English-only** hallucination detection go, and **where** does **target-language** supervision matter? The write-up frames **gaps** in the literature (brief related work) and what this benchmark adds for **cross-lingual hallucination detection**.
 
-## License
-
-If you reuse this repository publicly, add a `LICENSE` for your own code. **Mu-SHROOM** data and upstream **participant kit** code remain under their original licenses.
